@@ -1,16 +1,16 @@
 import Image from 'next/image'
-
+import Link from 'favicon.ico'
 export default function Home() {
     return (
-        <div>
+        <div className="bg-gradient-to-r from-gray-500 via-orange-400 via-60% to-white">
             <div
-                className="flex items-center flex-col space-y-40  h-screen mb-12 bg-fixed bg-center bg-cover bg-[url(https://placekitten.com/2000)]"
+                className="flex items-center flex-col space-y-40  h-screen mb-12 bg-fixed bg-center bg-cover bg-[url(../../public/background.jpg)]"
             >
                 <header className="bg-white w-full">
                     <div className="mx-auto max-w-screen-xl p-4">
                         <div className="flex items-center justify-between gap-4 lg:gap-10">
                             <div className="flex lg:w-0 lg:flex-1">
-                                <span className="h-10 w-20 rounded-lg bg-gray-200"></span>
+                                <img src={'favicon.ico'} alt={'Logo'} width={50} height={50}></img>
                             </div>
 
                             <nav className="hidden gap-8 text-sm font-medium md:flex">
@@ -19,22 +19,6 @@ export default function Home() {
                                 <a className="text-gray-500" href="">Projects</a>
                                 <a className="text-gray-500" href="">Contact</a>
                             </nav>
-
-                            <div className="hidden flex-1 items-center justify-end gap-4 sm:flex">
-                                <a
-                                    className="rounded-lg bg-gray-100 px-5 py-2 text-sm font-medium text-gray-500"
-                                    href=""
-                                >
-                                    Log in
-                                </a>
-
-                                <a
-                                    className="rounded-lg bg-blue-600 px-5 py-2 text-sm font-medium text-white"
-                                    href=""
-                                >
-                                    Sign up
-                                </a>
-                            </div>
 
                             <div className="lg:hidden">
                                 <button className="rounded-lg bg-gray-100 p-2 text-gray-600" type="button">
@@ -75,7 +59,7 @@ export default function Home() {
                     </p>
                 </div>
             </div>
-            <div className="max-w-lg m-auto ">
+            <div className="max-w-lg m-auto">
                 <p className="mb-4">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat a
                     magna non varius. Proin leo felis, euismod non porta eget, varius sit amet
@@ -104,7 +88,7 @@ export default function Home() {
                 </p>
             </div>
             <section
-                className=" flex items-center justify-center h-screen m-auto mb-12 bg-fixed bg-center bg-cover bg-[url(https://placekitten.com/2000)]"
+                className=" flex items-center justify-center h-screen m-auto mb-12 bg-fixed bg-center bg-cover bg-[url(../../public/background.jpg)]"
             >
                 <div className="px-20 py-20  text-white bg-black/50 w-full ">
                     <h2 className="text-2xl"> Another Section will go here </h2>
