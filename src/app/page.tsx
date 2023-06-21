@@ -1,55 +1,28 @@
-import Image from 'next/image'
-import Link from 'favicon.ico'
+import NavHeader from "../app/components/navigation/NavHeader";
+import Image from "next/image";
+import profilePicture from "../../public/profile.jpg";
+
 export default function Home() {
     return (
-        <div className="bg-gradient-to-r from-gray-500 via-orange-400 via-60% to-white">
+        <div className="bg-gradient-to-r from-gray-500 to-slate-200">
             <div
-                className="flex items-center flex-col space-y-40  h-screen mb-12 bg-fixed bg-center bg-cover bg-[url(../../public/background.jpg)]"
+                className="flex items-center flex-col space-y-40  h-screen mb-12 bg-fixed bg-center bg-cover bg-[url(../../public/background2.jpg)]"
             >
-                <header className="bg-white w-full">
-                    <div className="mx-auto max-w-screen-xl p-4">
-                        <div className="flex items-center justify-between gap-4 lg:gap-10">
-                            <div className="flex lg:w-0 lg:flex-1">
-                                <img src={'favicon.ico'} alt={'Logo'} width={50} height={50}></img>
-                            </div>
+                <NavHeader></NavHeader>
 
-                            <nav className="hidden gap-8 text-sm font-medium md:flex">
-                                <a className="text-gray-500" href="">About</a>
-                                <a className="text-gray-500" href="">Blog</a>
-                                <a className="text-gray-500" href="">Projects</a>
-                                <a className="text-gray-500" href="">Contact</a>
-                            </nav>
-
-                            <div className="lg:hidden">
-                                <button className="rounded-lg bg-gray-100 p-2 text-gray-600" type="button">
-                                    <span className="sr-only">Open menu</span>
-                                    <svg
-                                        aria-hidden="true"
-                                        className="h-5 w-5"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M4 6h16M4 12h16M4 18h16"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2"
-                                        />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
+                <div className="w-full flex flex-row justify-center bg-black/40 px-0 py-20">
+                    <div className={"flex-10"}>
+                        <Image src={ profilePicture } alt={"Profile Picture"} width={200} height={200}></Image>
                     </div>
-                </header>
+                    <div className={"flex-10"}>
+                        <h2 className="text-5xl font-bold text-white">Quinten Vollmer </h2>
+                    </div>
 
-                <div className="w-full flex justify-center bg-white/40  px-0 py-20">
-                    <h2 className="text-3xl font-bold">Hero Section of Website </h2>
+
                 </div>
-                <div className="w-full flex flex-col px-40 justify-center bg-white/50  py-20">
-                    <h2 className="text-3xl font-bold"> About Us </h2>
-                    <p className="mt-10">
+                <div className="w-full flex flex-col px-40 justify-center bg-black/40  py-20">
+                    <h2 className="text-3xl font-bold text-white"> Welcome! </h2>
+                    <p className="mt-10 text-white">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolorem eum pariatur
                         tempora,
                         aliquid
