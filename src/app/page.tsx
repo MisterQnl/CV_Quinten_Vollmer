@@ -1,6 +1,6 @@
 import NavHeader from "../app/components/navigation/NavHeader";
 import Image from "next/image";
-import profilePicture from "../../public/profile.jpg";
+import profilePicture from "../../public/profile.png";
 
 export default function Home() {
     return (
@@ -12,7 +12,7 @@ export default function Home() {
 
                 <div className="w-full flex flex-row justify-center bg-black/40 px-0 py-20">
                     <div className={"flex-10"}>
-                        <Image src={ profilePicture } alt={"Profile Picture"} width={200} height={200}></Image>
+                        <Image src={ profilePicture } alt={"Profile Picture"} width={250} height={250}></Image>
                     </div>
                     <div className={"flex-10"}>
                         <h2 className="text-5xl font-bold text-white">Quinten Vollmer </h2>
