@@ -6,21 +6,15 @@ export default function Home() {
     return (
         <div className="bg-gradient-to-r from-gray-500 to-slate-200">
             <div
-                className="flex items-center flex-col space-y-40  h-screen mb-12 bg-fixed bg-center bg-cover bg-[url(../../public/background2.jpg)]"
+                className="flex items-center flex-col space-y-40 h-screen mb-12 bg-fixed bg-center bg-cover bg-[url(../../public/background2.jpg)]"
             >
                 <NavHeader></NavHeader>
 
-                <div className="w-full flex flex-row justify-center bg-black/40 px-0 py-20">
-                    <div className={"flex-10"}>
-                        <Image src={ profilePicture } alt={"Profile Picture"} width={250} height={250}></Image>
-                    </div>
-                    <div className={"flex-10"}>
-                        <h2 className="text-5xl font-bold text-white">Quinten Vollmer </h2>
-                    </div>
-
-
+                <div className="w-full flex justify-center items-center space-x-6 bg-black/40 px-0 py-5">
+                    <Image src={ profilePicture } alt={"Profile Picture"} width={250} height={250}></Image>
+                    <h2 className="text-5xl font-bold text-white">Quinten Vollmer </h2>
                 </div>
-                <div className="w-full flex flex-col px-40 justify-center bg-black/40  py-20">
+                <div className="w-full flex flex-col px-40 justify-center bg-black/40  py-5">
                     <h2 className="text-3xl font-bold text-white"> Welcome! </h2>
                     <p className="mt-10 text-white">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolorem eum pariatur
