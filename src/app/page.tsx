@@ -1,6 +1,7 @@
-import NavHeader from "../app/components/navigation/NavHeader";
 import Image from "next/image";
 import profilePicture from "../../public/profile.png";
+import ProjectList from "@/app/components/projectTiles/ProjectList";
+import NavHeader from "../app/components/navigation/NavHeader";
 
 const projects = [
     {
@@ -119,17 +120,9 @@ export default function Home() {
                     ))}
                 </div>
             </section>
-            <div
-                className="max-w-lg m-auto p-6 mb-14 border-2 rounded-lg border-slate-500 shadow-2xl shadow-slate-500 bg-slate-200">
-                {projects.map((project) => (
-                    <div key={project.header} className="flex flex-col items-center justify-center">
-                        <h2 className="text-3xl font-bold text-slate-900"> {project.header} </h2>
-                        <p className="mb-4">
-                            {project.message}
-                        </p>
-                    </div>
-                ))}
-            </div>
+
+            <ProjectList projects={projects}></ProjectList>
+
         </section>
     )
 }
