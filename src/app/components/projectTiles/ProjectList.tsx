@@ -36,14 +36,14 @@ function FlipCard({ project }: FlipCardProps) {
             className={clsx(
                 "transform transition-transform duration-500 ease-in-out max-w-lg p-6 m-10 border-2 rounded-lg border-slate-500 shadow-2xl shadow-slate-500 bg-slate-200",
                 isFlipped ? "rotate-y-180" : "",
-                "min-h-[400px]" // Replace 400px with the height you want
+                "min-w-200 min-h-200"
             )}
         >
-            <div className={clsx("absolute w-full h-[400px]", isFlipped ? "hidden" : "")}>
+            <div className={clsx("min-w-200 min-h-200", isFlipped ? "hidden" : "")}>
                 {/* Insert your SVG here */}
                 <h2 className="text-3xl font-bold text-slate-900"> {project.header} </h2>
             </div>
-            <div className={clsx("absolute w-full", isFlipped ? "" : "hidden")}>
+            <div className={clsx("min-w-200 min-h-200", isFlipped ? "" : "hidden")}>
                 <p className="mb-4">
                     {project.message}
                 </p>

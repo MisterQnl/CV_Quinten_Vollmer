@@ -123,6 +123,7 @@ export default function Home() {
 
             <ProjectList projects={projects}></ProjectList>
 
+
         </section>
     )
 }
