@@ -77,32 +77,37 @@ const skills = [
 
 export default function Home() {
   return (
-    <section id={'homepage'} className="bg-slate-600/70">
+    <section id={'homepage'} className="bg-gradient-to-r from-slate-500 to-slate-200">
       <section
         id={'welcomePage'}
-        className="flex items-center flex-col space-y-40 h-screen mb-12 bg-fixed bg-center bg-cover bg-[url(../../public/background2.jpg)]"
+        className="flex items-center flex-col space-y-40 h-screen mb-12 bg-fixed shadow-2xl shadow-slate-500 bg-center bg-cover bg-[url(../../public/background2.jpg)]"
       >
         <NavHeader />
-        <div className="w-full flex justify-center items-center space-x-6 bg-black/40 px-0 py-5">
+        <div className="w-full flex flex-col sm:flex-row justify-center items-center space-x-0 sm:space-x-6 bg-black/40 px-0 py-5">
           <Image
             src={profilePicture}
             alt={'Profile Picture'}
             width={250}
             height={250}
           ></Image>
-          <h2 className="text-5xl font-bold text-white">Quinten Vollmer </h2>
+          <h2 className="text-5xl font-bold text-white mt-6 sm:mt-0">
+            Quinten Vollmer{' '}
+          </h2>
         </div>
-        <div className="w-full flex flex-col justify-center items-center px-40 bg-black/40 py-5">
+        <div className="w-full flex flex-col justify-center items-center px-6 sm:px-40 bg-black/40 py-5">
           <div className="w-full flex items-center justify-center">
             <h2 className="text-3xl font-bold text-white">Welkom </h2>
-            <span className={'text-3xl animate-wiggle animate-infinite'}>👋</span>
+            <span className={'text-3xl animate-wiggle animate-infinite'}>
+              👋
+            </span>
           </div>
           <p className="mt-10 text-white">Tot mijn profiel!</p>
         </div>
       </section>
+
       <section
         id={'aboutMe'}
-        className="max-w-lg m-auto p-6 mb-14 border-2 rounded-lg border-slate-500 shadow-2xl shadow-slate-500 bg-slate-200"
+        className="sm:p-2 md:p-6 max-w-lg m-auto mb-14 border-2 rounded-lg border-slate-500 shadow-2xl shadow-slate-500 bg-slate-200"
       >
         <h2 className="text-3xl font-bold text-slate-900">Wie ben ik?</h2>
         <p className="mb-4">
@@ -134,11 +139,12 @@ export default function Home() {
           met de Scrum-methodiek.
         </p>
       </section>
+
       <section
         id={'skills'}
-        className="flex items-center justify-center h-screen m-auto mb-12 bg-fixed bg-center bg-cover bg-[url(../../public/background.jpg)]"
+        className="flex items-center justify-center h-screen m-auto mb-12 shadow-2xl shadow-slate-500 bg-fixed bg-center bg-cover bg-[url(../../public/background.jpg)]"
       >
-        <div className="w-full flex flex-col px-40 items-center justify-center bg-black/40 py-5">
+        <div className="w-full sm:px-6 md:px-40 flex flex-col items-center justify-center bg-black/40 py-5">
           <h1 className="text-5xl font-bold text-white">Mijn skills</h1>
           <p className={'text-white'}>
             Hieronder vind je een overzicht van mijn skills.
