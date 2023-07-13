@@ -54,8 +54,6 @@ function ProjectList({ projects }: ProjectListProps) {
 
 // The FlipCard component
 function FlipCard({ project, isFlipped, onFlip }: FlipCardProps) {
-  const flipClasses = 'animate-rotate-y animate-once animate-delay-200';
-
   // Split the message by newline characters to create an array of paragraphs
   const messageParagraphs = project.message.split('\n');
 
@@ -64,7 +62,7 @@ function FlipCard({ project, isFlipped, onFlip }: FlipCardProps) {
       onClick={onFlip}
       className={clsx(
         'max-w-lg p-6 m-10 border-2 rounded-lg border-slate-500 shadow-2xl shadow-slate-500 bg-slate-200 cursor-pointer',
-        isFlipped ? flipClasses : ''
+        isFlipped ? 'animate-fade-right animate-delay-200' : 'animate-fade-left animate-delay-200'
       )}
     >
       {/* Show the SVG if the card isn't flipped */}
