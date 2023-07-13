@@ -82,16 +82,16 @@ const projects = [
 const skills = [
   {
     header: 'Talen',
-    message: 'Java, JavaScript, TypeScript, SQL, Python, C++, Git',
+    message: 'Java, JavaScript, TypeScript, SQL, Python, C++',
   },
   {
     header: 'Frameworks',
     message:
-      'React, Next.js, Node.js, Express, Sequelize, Android Studio, TailwindCSS',
+      'React, Next.js, Node.js, Express, Sequelize, TailwindCSS',
   },
   {
     header: 'Tools',
-    message: 'GitHub, Jira, Figma, Android Studio, Swagger, Postman',
+    message: 'GitHub, Android Studio, Jira, Figma, Android Studio, Swagger, Postman',
   },
 ];
 
@@ -120,13 +120,14 @@ export default function Home() {
           </h2>
         </div>
         <div className='w-full flex flex-col justify-center items-center px-6 sm:px-40 bg-black/40 py-5'>
-          <div className='w-full flex items-center justify-center'>
+          <div className='w-full flex items-center justify-center m-6'>
             <h2 className='text-3xl font-bold text-white'>Welkom </h2>
             <span className={'text-3xl animate-wiggle animate-infinite'}>
               👋
             </span>
           </div>
-          <p className='mt-10 text-white'>Tot mijn profiel!</p>
+          <p className='text-white'> Wat leuk dat je mijn website bezoekt! Deze site dient als mijn portfolio, waarin al mijn ervaringen en projecten worden gepresenteerd. </p>
+          <p className={'text-white pb-4'}> Heb je interesse om met mij in contact te komen? Stuur me dan een bericht via LinkedIn, in de navigatiebalk vind je een koppeling naar mijn profiel. </p>
         </div>
       </section>
 
