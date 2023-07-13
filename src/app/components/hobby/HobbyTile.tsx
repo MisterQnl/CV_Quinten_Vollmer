@@ -61,17 +61,17 @@ function FlipCard({ hobby, isFlipped }: FlipCardProps) {
   return (
     <div
       className={clsx(
-        'max-w-lg p-6 m-10 border-2 rounded-lg border-slate-500 shadow-2xl shadow-slate-500 bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 background-animate',
+        'max-w-lg p-6 m-10 border-2 rounded-lg border-slate-500 shadow-2xl shadow-slate-500 bg-slate-300',
         isFlipped ? 'animate-fade-right' : 'animate-fade-left'
       )}
     >
       {/* Show the SVG if the card isn't flipped */}
-      <div className={clsx('min-w-200 min-h-200', isFlipped ? 'hidden' : '')}>
+      <div className={clsx('', isFlipped ? 'hidden' : '')}>
         {hobby.svg}
       </div>
       {/* Show the hobby header if the card is flipped */}
-      <div className={clsx('min-w-200 min-h-200', isFlipped ? '' : 'hidden')}>
-        <h2 className="text-3xl font-bold text-slate-900">{hobby.header}</h2>
+      <div className={clsx('', isFlipped ? '' : 'hidden')}>
+        <h2 className="text-3xl font-black animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">{hobby.header}</h2>
       </div>
     </div>
   );
