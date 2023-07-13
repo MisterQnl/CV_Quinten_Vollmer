@@ -103,7 +103,7 @@ export default function Home() {
     >
       <section
         id={'welcomePage'}
-        className='flex items-center flex-col space-y-40 h-screen mb-12 bg-fixed shadow-2xl shadow-slate-500 bg-center bg-cover bg-[url(../../public/background2.jpg)]'
+        className='flex items-center flex-col space-y-40 h-screen mb-12 bg-fixed shadow-2xl shadow-slate-500 bg-center bg-cover bg-[url(../../public/background7.jpg)]'
       >
         <NavHeader />
 
