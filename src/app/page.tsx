@@ -52,18 +52,6 @@ const SvgIconPortfolio = () => (
 
 const projects = [
   {
-    header: 'Project To-day',
-    message:
-      'Dit project had als doel het ontwikkelen van een Android-applicatie waarmee gebruikers hun taken konden bijhouden. We hebben de app gebouwd met behulp van Android Studio, waarbij we Java hebben gebruikt als programmeertaal en Room als database. Het project begon vanaf de basis, waarbij we diagrammen hebben gebruikt om de structuur van de app te plannen.',
-    svg: <SvgIconToday />,
-  },
-  {
-    header: 'Project InventoryHub',
-    message:
-      'Dit project omvatte de ontwikkeling van een voorraadbeheersysteem. We hebben een op maat gemaakt embedded systeem ontworpen, dat fungeerde als een weegschaal om de voorraad te meten. Het embedded systeem is ontwikkeld in C++ en maakte gebruik van een ESP32 microcontroller. Daarnaast hebben we een Android-applicatie ontwikkeld als gebruikersinterface, waarbij we WiFi, Bluetooth en NFC-technologieën hebben toegepast voor de communicatie tussen het embedded systeem en de app. \nDe app is ontwikkeld met behulp van Android Studio en Java. Om het systeem goed te laten functioneren, hebben we een RESTful API ontwikkeld, geschreven in JavaScript met behulp van Node.js. Deze API werkte samen met een MySQL-database als server. Het project omvatte het ontwerpen van de firmware voor het embedded systeem, het ontwikkelen van de API, het bouwen van de Android-app en het implementeren van het volledige productieproces.',
-    svg: <SvgIconInventoryHub />,
-  },
-  {
     header: 'Project Farmconnect',
     message:
       'Het hoofddoel van dit project was het ontwikkelen van een gebruiksvriendelijke webapplicatie met het oog op het verminderen van voedselverspilling, aansluitend bij de principes van Duurzaam Ontwikkelingsdoel (SDG) 12. Met dit in gedachten hebben we ervoor gekozen om een platform te creëren waar boeren hun boerderijen kunnen adverteren. Dit maakt het eenvoudiger voor bewuste consumenten, die graag een duurzamere en meer bewuste levensstijl nastreven, om lokaal geproduceerd voedsel te vinden en rechtstreeks van de boerderij te kopen. \n' +
@@ -72,13 +60,23 @@ const projects = [
     svg: <SvgIconFarmConnect />,
   },
   {
+    header: 'Project InventoryHub',
+    message:
+      'Dit project omvatte de ontwikkeling van een voorraadbeheersysteem. We hebben een op maat gemaakt embedded systeem ontworpen, dat fungeerde als een weegschaal om de voorraad te meten. Het embedded systeem is ontwikkeld in C++ en maakte gebruik van een ESP32 microcontroller. Daarnaast hebben we een Android-applicatie ontwikkeld als gebruikersinterface, waarbij we WiFi, Bluetooth en NFC-technologieën hebben toegepast voor de communicatie tussen het embedded systeem en de app. \nDe app is ontwikkeld met behulp van Android Studio en Java. Om het systeem goed te laten functioneren, hebben we een RESTful API ontwikkeld, geschreven in JavaScript met behulp van Node.js. Deze API werkte samen met een MySQL-database als server. Het project omvatte het ontwerpen van de firmware voor het embedded systeem, het ontwikkelen van de API, het bouwen van de Android-app en het implementeren van het volledige productieproces.',
+    svg: <SvgIconInventoryHub />,
+  },
+  {
     header: 'Project Portfolio',
     message:
       'Het primaire doel van dit project was om mijn kennis en ervaring op het gebied van webontwikkeling te verdiepen en uit te breiden. Ik heb ervoor gekozen om mijn portfolio tot leven te brengen door deze als een interactieve website te presenteren. \nIk heb dit project uitgevoerd met behulp van Next.js 13, een krachtig framework voor het ontwikkelen van de website. Voor de vormgeving en styling van de website heb ik Tailwind CSS gebruikt, een utility-first CSS-bibliotheek, die mij hielp om snel en effectief een aantrekkelijk design te creëren. Tenslotte heb ik voor de deployment van de website Vercel gebruikt, een platform dat uitstekend geïntegreerd is met Next.js en dat zorgt voor een vlekkeloze gebruikerservaring. \nDit project diende zowel als een kans om mijn vaardigheden te verbeteren als een showcase van mijn groei als ontwikkelaar.',
     svg: <SvgIconPortfolio />,
-
   },
-
+  {
+    header: 'Project To-day',
+    message:
+      'Dit project had als doel het ontwikkelen van een Android-applicatie waarmee gebruikers hun taken konden bijhouden. We hebben de app gebouwd met behulp van Android Studio, waarbij we Java hebben gebruikt als programmeertaal en Room als database. Het project begon vanaf de basis, waarbij we diagrammen hebben gebruikt om de structuur van de app te plannen.',
+    svg: <SvgIconToday />,
+  },
 ];
 
 const skills = [
