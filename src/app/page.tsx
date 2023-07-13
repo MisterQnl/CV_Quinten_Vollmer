@@ -150,7 +150,7 @@ export default function Home() {
         <p className="mb-4">
           Op de werkvloer richt ik me op het verbeteren en stroomlijnen van
           werkprocessen en ga ik geen uitdaging uit de weg. Ik leer graag van
-          mijn collega's en doe altijd mijn best om een bijdrage te leveren aan
+          mijn collegas en doe altijd mijn best om een bijdrage te leveren aan
           het team.
         </p>
         <p className="mb-4">
